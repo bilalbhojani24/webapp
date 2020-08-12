@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.navbar-brand{
+  color: #3498db !important;
+  font-weight: 700;
+  font-size: 2rem !important;
+}
+.active_link{
+  border-bottom: 1px solid #3498db;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* =======banner======== */
+.banner_content{
+  padding: 40px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner_content h1{
+  padding: 10px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heading_span{
+  color:#3498db;
+  text-transform: uppercase;
+}
+.banner_content h4{
+  padding: 10px 0; 
+  margin-bottom: 20px;
+}
+.banner_content .button{
+  background-color: white;
+  color: #3498db;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid #3498db;
+  transition: all 0.2s;
+}
+.banner_content .button:hover{
+  cursor: pointer;
+  background-color: #3498db;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*animation*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform: translateY(-10px);
   }
 }
